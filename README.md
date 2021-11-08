@@ -6,3 +6,4 @@ This is anonymous project website of the paper "MSDN: Mutually Semantical Distil
 2. The test scripts
 3. The t-SNE visualization of visual features on CUB, SUN and AWA2.
 4. More visualization of attention maps.
+5. 
