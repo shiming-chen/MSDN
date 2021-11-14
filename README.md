@@ -1,14 +1,15 @@
 # MSDN
 
-This is anonymous project website of the paper "MSDN: Mutually Semantic Distillation Network for Zero-Shot Learning" submitted to CVPR 2022. This website includes the following materials for testing and checking our results reported in our paper:
+This is an anonymous project website of paper "**MSDN: Mutually Semantic Distillation Network for Zero-Shot Learning**" submitted to *CVPR'22*. This website includes the following materials for testing and checking our results reported in our paper:
 
-1. The trained model
-2. The test scripts
-3. More visualization of attention maps.
+1. *The trained model*
+2. *The test scripts*
+3. *The t-SNE visualization of visual features on **CUB**, **SUN** and **AWA2**. *
+4. *More visualization of attention maps.*
 
 ## Preparing Dataset and Model
 
-We provide trained models ([Google Drive](https://drive.google.com/drive/folders/1WK9pm2eX2Rl4rWqXqe_EZiAM8wWB8yqG?usp=sharing)) on three different datasets: [CUB](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html), [SUN](http://cs.brown.edu/~gmpatter/sunattributes.html), [AWA2](http://cvml.ist.ac.at/AwA2/) in the CZSL/GZSL setting. You can download model files as well as corresponding datasets, and organize them as follows: 
+We provide trained models ([Google Drive](https://drive.google.com/drive/folders/1IBGfPXleu4E2BLTI4TlUL1jYSuwahbYC?usp=sharing)) on three different datasets: [CUB](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html), [SUN](http://cs.brown.edu/~gmpatter/sunattributes.html), [AWA2](http://cvml.ist.ac.at/AwA2/) in the CZSL/GZSL setting. You can download model files as well as corresponding datasets, and organize them as follows: 
 ```
 .
 ├── saved_model
