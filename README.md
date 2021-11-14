@@ -57,8 +57,29 @@ Results of our released models using various evaluation protocols on three datas
 
 **Note**: All of above results are run on a server with an AMD Ryzen 7 5800X CPU and a NVIDIA RTX A6000 GPU.
 
+# Visualization Results
+## t-SNE Visualizations
+The t-SNE visualization of visual features for seen classes and unseen classes on three datasets, learned by the **"baseline"**, **"V->A"**, **"A->V"**, and **"V->A and A->V"**. The 10 colors denote 10 different seen/unseen classes randomly selected from each dataset.
+### CUB Dataset: 
+Seen Classes: 
+![](images/tsne/cub_tsne_train_seen.png)
+Unseen Classes: 
+![](images/tsne/cub_tsne_test_unseen.png)
+
+### SUN Dataset:
+Seen Classes:  
+![](images/tsne/sun_tsne_train_seen.png)
+Unseen Class: 
+![](images/tsne/sun_tsne_test_unseen.png)
+
+### AWA2 Dataset: 
+Seen Classes: 
+![](images/tsne/awa2_tsne_train_seen.png)
+Unseen Classes: 
+![](images/tsne/awa2_tsne_test_unseen.png)
+
 ## Attention Maps
-Visualization of attention maps for the two mutual attention sub-nets. For each group, the first row attention maps are learned by attribute->visual subnet, the second row attention maps are learned by visual->attribute subnet. The scores are the attribute scores. 
+Visualization of attention maps for the two mutual attention sub-nets. For each group, the first row attention maps are learned by **Attribute->Visual subnet**, the second row attention maps are learned by **Visual->Attribute subnet**. The scores are the attribute scores. 
 
 ![](images/t-v/Acadian_Flycatcher_0008_795599.jpg)
 ![](images/v-t/Acadian_Flycatcher_0008_795599.jpg)
