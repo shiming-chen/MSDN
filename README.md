@@ -2,10 +2,10 @@
 
 This is an anonymous project website of paper "**MSDN: Mutually Semantic Distillation Network for Zero-Shot Learning**" submitted to *CVPR'22*. This website includes the following materials for testing and checking our results reported in our paper:
 
-1. *The trained model*
-2. *The test scripts*
-3. *The t-SNE visualization of visual features on **CUB**, **SUN** and **AWA2**. *
-4. *More visualization of attention maps.*
+1. The trained model
+2. The test scripts
+3. The t-SNE visualization of visual features on **CUB**, **SUN** and **AWA2**. 
+4. More visualization of attention maps.
 
 ## Preparing Dataset and Model
 
