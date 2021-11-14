@@ -11,7 +11,7 @@ import torch.nn.functional as F
 import numpy as np  
 #%%  
   
-class BCA(nn.Module):  
+class MSDN(nn.Module):  
     #####  
     # einstein sum notation  
     # b: Batch size \ f: dim feature=2048 \ v: dim w2v=300 \ r: number of region=49 \ k: number of classes  
