@@ -14,8 +14,8 @@ import numpy as np
 class MSDN(nn.Module):  
     #####  
     # einstein sum notation  
-    # b: Batch size \ f: dim feature=2048 \ v: dim w2v=300 \ r: number of region=49 \ k: number of classes  
-    # i: number of attribute=312 \ h : hidden attention dim  
+    # b: Batch size \ f: dim feature=2048 \ v: dim w2v=300 \ r: number of region=196 \ k: number of classes  
+    # i: number of attribute=312 
     #####  
     def __init__(self,dim_f,dim_v,  
                  init_w2v_att,att,normalize_att,  
