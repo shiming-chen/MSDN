@@ -58,6 +58,7 @@ Results of our released models using various evaluation protocols on three datas
 **Note**: All of above results are run on a server with an AMD Ryzen 7 5800X CPU and a NVIDIA RTX A6000 GPU.
 
 ## Attention Maps
+Visualization of attention maps for the two mutual attention sub-nets. For each group, the first row attention maps are learned by attribute->visual subnet, the second row attention maps are learned by visual->attribute subnet. The scores are the attribute scores. 
 
 ![](images/t-v/Acadian_Flycatcher_0008_795599.jpg)
 ![](images/v-t/Acadian_Flycatcher_0008_795599.jpg)
@@ -74,7 +75,7 @@ Results of our released models using various evaluation protocols on three datas
 ![](images/t-v/European_Goldfinch_0025_794647.jpg)
 ![](images/v-t/European_Goldfinch_0025_794647.jpg)
 ##
-##
+
 ![](images/t-v/Vesper_Sparrow_0090_125690.jpg)
 ![](images/v-t/Vesper_Sparrow_0090_125690.jpg)
 ##
