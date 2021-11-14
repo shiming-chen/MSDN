@@ -12,12 +12,12 @@ We provide trained models ([Google Drive](https://drive.google.com/drive/folders
 ```
 .
 ├── saved_model
-│   ├── TransZero_CUB_CZSL.pth
-│   ├── TransZero_CUB_GZSL.pth
-│   ├── TransZero_SUN_CZSL.pth
-│   ├── TransZero_SUN_GZSL.pth
-│   ├── TransZero_AWA2_CZSL.pth
-│   └── TransZero_AWA2_GZSL.pth
+│   ├── CUB_MSDN_CZSL.pth
+│   ├── CUB_MSDN_GZSL.pth
+│   ├── SUN_MSDN_CZSL.pth
+│   ├── SUN_MSDN_GZSL.pth
+│   ├── AWA2_MSDN_CZSL.pth
+│   └── AWA2_MSDN_GZSL.pth
 ├── data
 │   ├── CUB/
 │   ├── SUN/
