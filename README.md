@@ -73,12 +73,8 @@ Results of our released models using various evaluation protocols on three datas
 ##
 ![](images/t-v/European_Goldfinch_0025_794647.jpg)
 ![](images/v-t/European_Goldfinch_0025_794647.jpg)
-##
-![](images/t-v/Florida_Jay_0008_64482.jpg)
-![](images/v-t/Florida_Jay_0008_64482.jpg)
-##
-![](images/t-v/Fox_Sparrow_0025_114555.jpg)
-![](images/v-t/Fox_Sparrow_0025_114555.jpg)
+
+
 ##
 ![](images/t-v/Grasshopper_Sparrow_0053_115991.jpg)
 ![](images/v-t/Grasshopper_Sparrow_0053_115991.jpg)
