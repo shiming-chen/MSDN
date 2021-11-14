@@ -26,7 +26,7 @@ class MSDN(nn.Module):
                  is_bias = False,bias = 1,non_linear_act=False,
                  loss_type = 'CE',non_linear_emb = False,
                  is_sigmoid = False):  
-        super(BCA, self).__init__()  
+        super(MSDN, self).__init__()  
         self.dim_f = dim_f  
         self.dim_v = dim_v  
         self.dim_att = att.shape[1]  
@@ -319,14 +319,14 @@ class MSDN(nn.Module):
         ##
         
         ## compute Dense Attention
-        A = torch.einsum('iv,vf,bfr->bir',V_n,self.W_2,Fs)   # batchx312x49
-        A = F.softmax(A,dim = -1)                   # compute an attention map for each attribute
+        A = torch.einsum('iv,vf,bfr->bir',V_n,self.W_2,Fs)  
+        A = F.softmax(A,dim = -1)                  
         
-        F_p = torch.einsum('bir,bfr->bif',A,Fs)     # compute attribute-based features
+        F_p = torch.einsum('bir,bfr->bif',A,Fs)    
         if self.uniform_att_1: # false
-            S_p = torch.einsum('bir,bir->bi',A_b,S)     # ablation: compute attribute score using average image region features
+            S_p = torch.einsum('bir,bir->bi',A_b,S)    
         else:
-            S_p = torch.einsum('bir,bir->bi',A,S)       # compute attribute scores from attribute attention maps
+            S_p = torch.einsum('bir,bir->bi',A,S)       
         
         if self.non_linear_act: # false
             S_p = F.relu(S_p)
@@ -338,9 +338,9 @@ class MSDN(nn.Module):
         ##  
         
         if self.uniform_att_2:  # true
-            S_pp = torch.einsum('ki,bi,bi->bik',self.att,A_b_p,S_p)     # ablation: setting attention over attribute to 1
+            S_pp = torch.einsum('ki,bi,bi->bik',self.att,A_b_p,S_p)    
         else:
-            # S_pp = torch.einsum('ki,bi,bi->bik',self.att,A_p,S_p)       # compute the final prediction as the product of semantic scores, attribute scores, and attention over attribute scores
+            # S_pp = torch.einsum('ki,bi,bi->bik',self.att,A_p,S_p)     
             S_pp = torch.einsum('ki,bi->bik',self.att,S_p)
             
         S_attr = torch.einsum('bi,bi->bi',A_b_p,S_p)
@@ -370,34 +370,22 @@ class MSDN(nn.Module):
         if self.is_sigmoid:
             S=torch.sigmoid(S)
         
-        ## Ablation setting
-        # A_b = Fs.new_full((B,self.dim_att,R),1/R)
-        # A_b_p = self.att.new_full((B,self.dim_att),fill_value = 1)   
-        # S_b_p = torch.einsum('bir,bir->bi',A_b,S)  
-        # S_b_pp = torch.einsum('ki,bi,bi->bk',self.att,A_b_p,S_b_p)  
-        ##
+
         
         ## compute Dense Attention
-        # A = torch.einsum('bfr,fv,iv->bri',Fs,self.W_1_1,V_n)   # batchx49x312
         A = torch.einsum('iv,vf,bfr->bir',V_n,self.W_2_1,Fs)
-        A = F.softmax(A,dim = 1)                   # compute an attention map for each attribute
+        A = F.softmax(A,dim = 1)                 
         
-        v_a = torch.einsum('bir,iv->brv',A,V_n)     # compute attribute-based features
+        v_a = torch.einsum('bir,iv->brv',A,V_n)    
 
-        S_p = torch.einsum('bir,bri->bi',A,S)       # compute attribute scores from attribute attention maps
+        S_p = torch.einsum('bir,bri->bi',A,S)       
         
         if self.non_linear_act: # false
             S_p = F.relu(S_p)
-        ## 
-        
-        ## compute Attention over Attribute
-        # A_p = torch.einsum('bfr,fv,brv->br',Fs,self.W_3_1,F_p) #eq. 6
-        # A_p = torch.sigmoid(A_p) 
-        ##  
+
         
 
-        # S_pp = torch.einsum('ki,br,br->brk',self.att,A_p,S_p)       # compute the final prediction as the product of semantic scores, attribute scores, and attention over attribute scores
-        S_pp = torch.einsum('ki,bi->bik',self.att,S_p)       # compute the final prediction as the product of semantic scores, attribute scores, and attention over attribute scores
+        S_pp = torch.einsum('ki,bi->bik',self.att,S_p)     
             
         S_attr = 0#torch.einsum('bi,bi->bi',A_b_p,S_p)
             
@@ -414,7 +402,6 @@ class MSDN(nn.Module):
             S_pp = S_pp + self.vec_bias
                 
         ## spatial attention supervision   
-        Pred_att = 0#torch.einsum('brv,fv,iv->br',F_p,self.W_1_1,V_n)
         package2 = {'S_pp':S_pp,'visualf_v_a':v_a, 'S_p':S_p, 'A':A}
 
         return package1, package2
