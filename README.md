@@ -32,7 +32,7 @@ The code implementation of **TransZero** mainly based on [PyTorch](https://pytor
 $ pip install -r requirements.txt
 ```
 ## Runing
-Runing following commands and testing **TransZero** on different dataset:
+Runing following commands and testing **MSDN** on different dataset:
 
 CUB Dataset: 
 ```
