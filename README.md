@@ -36,15 +36,15 @@ Runing following commands and testing **TransZero** on different dataset:
 
 CUB Dataset: 
 ```
-$ python Test_cub.py     
+$ python Test_CUB.py     
 ```
 SUN Dataset:
 ```
-$ python Test_sun.py     
+$ python Test_SUN.py     
 ```
 AWA2 Dataset: 
 ```
-$ python Test_awa2.py     
+$ python Test_AWA2.py     
 ```
 
 ## Results
