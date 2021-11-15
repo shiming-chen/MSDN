@@ -80,35 +80,34 @@ Unseen Classes:
 ![](images/tsne/awa2_tsne_test_unseen.png)
 
 ## Attention Maps
-Visualization of attention maps for the two mutual attention sub-nets. For each group, the first row attention maps are learned by **Attribute->Visual subnet**, the second row attention maps are learned by **Visual->Attribute subnet**. The scores are the attribute scores. 
+Visualization of attention maps for the two mutual attention sub-nets. For each group, the attention maps in the first row are learned by **Attribute->Visual subnet**, the attention maps in the second row  are learned by **Visual->Attribute subnet**. The scores are the attribute scores. 
 
 ![](images/t-v/Acadian_Flycatcher_0008_795599.jpg)
 ![](images/v-t/Acadian_Flycatcher_0008_795599.jpg)
-##
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![](images/t-v/American_Goldfinch_0092_32910.jpg)
 ![](images/v-t/American_Goldfinch_0092_32910.jpg)
-##
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![](images/t-v/Canada_Warbler_0117_162394.jpg)
 ![](images/v-t/Canada_Warbler_0117_162394.jpg)
-##
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![](images/t-v/Elegant_Tern_0085_151091.jpg)
 ![](images/v-t/Elegant_Tern_0085_151091.jpg)
-##
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![](images/t-v/European_Goldfinch_0025_794647.jpg)
 ![](images/v-t/European_Goldfinch_0025_794647.jpg)
-##
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![](images/t-v/Vesper_Sparrow_0090_125690.jpg)
 ![](images/v-t/Vesper_Sparrow_0090_125690.jpg)
-##
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![](images/t-v/Western_Gull_0058_53882.jpg)
 ![](images/v-t/Western_Gull_0058_53882.jpg)
-##
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![](images/t-v/White_Throated_Sparrow_0128_128956.jpg)
 ![](images/v-t/White_Throated_Sparrow_0128_128956.jpg)
-##
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![](images/t-v/Winter_Wren_0118_189805.jpg)
 ![](images/v-t/Winter_Wren_0118_189805.jpg)
-##
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![](images/t-v/Yellow_Breasted_Chat_0044_22106.jpg)
 ![](images/v-t/Yellow_Breasted_Chat_0044_22106.jpg)
