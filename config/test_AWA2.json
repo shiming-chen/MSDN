@@ -1,0 +1,16 @@
+{
+  "dataset": "AWA2",
+  "dataset_path": "./data/AWA2",
+  "pkl_path": "./data/AWA2.pkl",
+  "device": "cuda:0",
+  "num_workers": 16,
+  "batch_size": 50,
+  "num_attribute": 85,
+  "num_class": 50,
+  "resnet_region": 196,
+  "dim_f": 2048,
+  "dim_v": 300,
+  "img_size": 448,
+  "w1": 1.0,
+  "w2": 0.0
+}

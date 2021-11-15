@@ -1,0 +1,16 @@
+{
+  "dataset": "CUB",
+  "dataset_path": "./data/CUB",
+  "pkl_path": "./data/CUB.pkl",
+  "device": "cuda:0",
+  "num_workers": 16,
+  "batch_size": 50,
+  "num_attribute": 312,
+  "num_class": 200,
+  "resnet_region": 196,
+  "dim_f": 2048,
+  "dim_v": 300,
+  "img_size": 448,
+  "w1": 0.9,
+  "w2": 0.1
+}

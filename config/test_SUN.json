@@ -1,0 +1,16 @@
+{
+  "dataset": "SUN",
+  "dataset_path": "./data/SUN",
+  "pkl_path": "./data/SUN.pkl",
+  "device": "cuda:0",
+  "num_workers": 16,
+  "batch_size": 50,
+  "num_attribute": 102,
+  "num_class": 717,
+  "resnet_region": 196,
+  "dim_f": 2048,
+  "dim_v": 300,
+  "img_size": 448,
+  "w1": 0.7,
+  "w2": 0.3
+}
