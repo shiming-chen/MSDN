@@ -53,8 +53,8 @@ Results of our released models using various evaluation protocols on three datas
 | Dataset | Acc(CZSL) | U(GZSL) | S(GZSL) | H(GZSL) |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 | CUB | 75.7 | 68.7 | 67.5 | 68.1 |
-| SUN | 65.6 | 51.8 | 34.3 | 41.3 |
-| AWA2 | 68.8 | 60.8 | 74.6 | 67.0 |
+| SUN | 65.8 | 51.8 | 34.3 | 41.3 |
+| AWA2 | 70.1 | 62.0 | 74.5 | 67.7 |
 
 **Note**: All of above results are run on a server with an AMD Ryzen 7 5800X CPU and a NVIDIA RTX A6000 GPU.
 
