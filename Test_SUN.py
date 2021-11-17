@@ -32,4 +32,4 @@ model_dict.update(saved_dict)
 model_czsl.load_state_dict(model_dict)
 
 evaluation(config.batch_size, config.device,
-           dataloader, model_gzsl, model_gzsl)
+           dataloader, model_gzsl, model_czsl)
