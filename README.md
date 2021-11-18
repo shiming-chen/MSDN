@@ -27,7 +27,7 @@ We provide trained models ([Google Drive](https://drive.google.com/drive/folders
 ```
 
 ## Requirements
-The code implementation of **TransZero** mainly based on [PyTorch](https://pytorch.org/). All of our experiments run and test in Python 3.8.8. To install all required dependencies:
+The code implementation of **MSDN** mainly based on [PyTorch](https://pytorch.org/). All of our experiments run and test in Python 3.8.8. To install all required dependencies:
 ```
 $ pip install -r requirements.txt
 ```
@@ -60,7 +60,7 @@ Results of our released models using various evaluation protocols on three datas
 
 # Visualization Results
 ## t-SNE Visualizations
-The t-SNE visualization of visual features for seen classes and unseen classes on three datasets, learned by the **"baseline"**, **"V->A"**, **"A->V"**, and **"V->A and A->V"**. The 10 colors denote 10 different seen/unseen classes randomly selected from each dataset.
+The t-SNE visualization of visual features for seen classes and unseen classes on three datasets, learned by the **"baseline"**, **"MSDN(V->A)"**, **"MSDN(A->V)"**, and **"MSDN(V->A and A->V)"**. The 10 colors denote 10 different seen/unseen classes randomly selected from each dataset.
 ### CUB Dataset: 
 Seen Classes: 
 ![](images/tsne/cub_tsne_train_seen.png)
