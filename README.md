@@ -1,11 +1,10 @@
 # MSDN
 
-This is an anonymous project website of paper "**MSDN: Mutually Semantic Distillation Network for Zero-Shot Learning**" submitted to *CVPR'22*. This website includes the following materials for testing and checking our results reported in our paper:
+This is the test codes of paper "**MSDN: Mutually Semantic Distillation Network for Zero-Shot Learning**" accepted to *CVPR'22*. This website includes the following materials for testing and checking our results reported in our paper:
 
 1. The trained model
 2. The test scripts
-3. The t-SNE visualization of visual features on **CUB**, **SUN** and **AWA2**. 
-4. More visualization of attention maps.
+
 
 ## Preparing Dataset and Model
 
@@ -56,8 +55,25 @@ Results of our released models using various evaluation protocols on three datas
 | SUN | 65.8 | 52.2 | 34.2 | 41.3 |
 | AWA2 | 70.1 | 62.0 | 74.5 | 67.7 |
 
-**Note**: All of above results are run on a server with an AMD Ryzen 7 5800X CPU and a NVIDIA RTX A6000 GPU.
+**Note**: All of above results are run on a server with an AMD Ryzen 7 5800X CPU and a NVIDIA RTX A6000 GPU. The training codes will be released soon.
 
+## Citation
+If this work is helpful for you, please cite our paper.
+
+```
+@InProceedings{Chen2022MSDN,
+    author    = {Chen, Shiming and Hong, Ziming and Xie, Guo-Sen and Yang, Wenhan and Peng, Qinmu and Wang, Kai and Zhao, Jian and You, Xinge},
+    title     = {TransZero: Attribute-guided Transformer for Zero-Shot Learning},
+    booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition ( CVPR )},
+    year      = {2022}
+}
+```
+
+
+## References
+Parts of our codes based on:
+* [hbdat/cvpr20_DAZLE](https://github.com/hbdat/cvpr20_DAZLE)
+<!--
 # Visualization Results
 ## t-SNE Visualizations
 The t-SNE visualization of visual features for seen classes and unseen classes on three datasets, learned by the **"baseline"**, **"MSDN(V->A)"**, **"MSDN(A->V)"**, and **"MSDN(V->A and A->V)"**. The 10 colors denote 10 different seen/unseen classes randomly selected from each dataset.
@@ -111,3 +127,4 @@ Visualization of attention maps for the two mutual attention sub-nets. For each 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![](images/t-v/Yellow_Breasted_Chat_0044_22106.jpg)
 ![](images/v-t/Yellow_Breasted_Chat_0044_22106.jpg)
+-->
