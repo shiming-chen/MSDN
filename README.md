@@ -63,7 +63,7 @@ If this work is helpful for you, please cite our paper.
 ```
 @InProceedings{Chen2022MSDN,
     author    = {Chen, Shiming and Hong, Ziming and Xie, Guo-Sen and Yang, Wenhan and Peng, Qinmu and Wang, Kai and Zhao, Jian and You, Xinge},
-    title     = {TransZero: Attribute-guided Transformer for Zero-Shot Learning},
+    title     = {MSDN: Mutually Semantic Distillation Network for Zero-Shot Learning},
     booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition ( CVPR )},
     year      = {2022}
 }
