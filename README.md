@@ -102,6 +102,7 @@ If this work is helpful for you, please cite our paper.
 ## References
 Parts of our codes based on:
 * [hbdat/cvpr20_DAZLE](https://github.com/hbdat/cvpr20_DAZLE)
+* [shiming-chen/TransZero](https://github.com/shiming-chen/TransZero)
 <!--
 # Visualization Results
 ## t-SNE Visualizations
