@@ -1,12 +1,45 @@
 # MSDN
 
-This is the test codes of paper "**MSDN: Mutually Semantic Distillation Network for Zero-Shot Learning**" accepted to *CVPR'22*. This website includes the following materials for testing and checking our results reported in our paper:
+This is the total codes of paper "**MSDN: Mutually Semantic Distillation Network for Zero-Shot Learning**" accepted to *CVPR'22*. This website includes the following materials for testing and checking our results reported in our paper:
 
-1. The trained model
-2. The test scripts
+1. The training codes
+1. The testing codes
+2. The trained model
 
+### Requirements
+The code implementation of **MSDN** mainly based on [PyTorch](https://pytorch.org/). All of our experiments run and test in Python 3.8.8. To install all required dependencies:
+```
+$ pip install -r requirements.txt
+```
 
-## Preparing Dataset and Model
+## Training
+
+We trained the model on three popular ZSL benchmarks: [CUB](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html), [SUN](http://cs.brown.edu/~gmpatter/sunattributes.html) and [AWA2](http://cvml.ist.ac.at/AwA2/) following the data split of [xlsa17](http://datasets.d2.mpi-inf.mpg.de/xian/xlsa17.zip). 
+Please follow [TransZero](https://github.com/shiming-chen/TransZero) to prepare datasets and extract visual features.
+
+### Training Script
+
+```
+$ python MSDN_cub.py
+$ python MSDN_sun.py
+$ python MSDN_awa2.py
+```
+**Note**: Please load the corresponding setting when aiming at the CZSL task.
+
+### Results
+We also upload trained models in [test branch](https://github.com/shiming-chen/MSDN). Results of our released models using various evaluation protocols on three datasets, both in the conventional ZSL (CZSL) and generalized ZSL (GZSL) settings.
+
+| Dataset | Acc(CZSL) | U(GZSL) | S(GZSL) | H(GZSL) |
+| :-----: | :-----: | :-----: | :-----: | :-----: |
+| CUB | 76.1 | 68.7 | 67.5 | 68.1 |
+| SUN | 65.8 | 52.2 | 34.2 | 41.3 |
+| AWA2 | 70.1 | 62.0 | 74.5 | 67.7 |
+
+**Note**: All of above results are run on a server with an AMD Ryzen 7 5800X CPU and a NVIDIA RTX A6000 GPU. The training codes will be released soon.
+
+## Testing
+
+### Preparing Dataset and Model
 
 We provide trained models ([Google Drive](https://drive.google.com/drive/folders/1IBGfPXleu4E2BLTI4TlUL1jYSuwahbYC?usp=sharing)) on three different datasets: [CUB](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html), [SUN](http://cs.brown.edu/~gmpatter/sunattributes.html), [AWA2](http://cvml.ist.ac.at/AwA2/) in the CZSL/GZSL setting. You can download model files as well as corresponding datasets, and organize them as follows: 
 ```
@@ -25,12 +58,8 @@ We provide trained models ([Google Drive](https://drive.google.com/drive/folders
 └── ···
 ```
 
-## Requirements
-The code implementation of **MSDN** mainly based on [PyTorch](https://pytorch.org/). All of our experiments run and test in Python 3.8.8. To install all required dependencies:
-```
-$ pip install -r requirements.txt
-```
-## Runing
+
+## Testing Script
 Runing following commands and testing **MSDN** on different dataset:
 
 CUB Dataset: 
@@ -46,7 +75,7 @@ AWA2 Dataset:
 $ python Test_AWA2.py     
 ```
 
-## Results
+### Results
 Results of our released models using various evaluation protocols on three datasets, both in the conventional ZSL (CZSL) and generalized ZSL (GZSL) settings.
 
 | Dataset | Acc(CZSL) | U(GZSL) | S(GZSL) | H(GZSL) |
